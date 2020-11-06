@@ -1,0 +1,12 @@
+{
+	"name": "random-js",
+	"version": "1.0.0",
+	"description": "Random series of JS tools",
+	"repository": "https://github.com/alehechka/random-js.git",
+	"author": "Adam Lehechka (alehechka)",
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"compound": "node ./compound.js simple"
+	}
+}

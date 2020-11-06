@@ -1,6 +1,4 @@
-const range = (size, startAt = 0) => {
-	return [...Array(size).keys()].map((i) => i + startAt);
-};
+import { range } from './utils/index.mjs';
 
 const compoundOneYear = (prevAmount, interestRate, rate = 1) => {
 	return range(rate).reduce((amount) => {
@@ -26,5 +24,7 @@ const compoundYears = (prevAmount, interestRate, years, rate = 1) => {
 				parseFloat(process.argv[6]) || 12 // rate of acc
 			);
 	}
-	console.log(parseFloat(response) ? response.toFixed(2) : response);
+	console.log(
+		parseFloat(response) ? parseFloat(response.toFixed(2)) : response
+	);
 })();
